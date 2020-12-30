@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayMusicActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/music_player_background"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/teal_700"
+        android:padding="@dimen/standard_margin">
+        <ImageView
+            android:id="@+id/image_music"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_music_player"
+            android:layout_toRightOf="@id/back"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_below="@id/toolbar"
+        android:text="# Tutorial: Using media player in android"
+        android:gravity="center"
+        />
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seek_bar"
+        android:padding="@dimen/standard_margin">
+        <ImageView
+            android:id="@+id/button_play"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:elevation="2dp"
+            android:padding="14dp"
+            android:background="@color/teal_700"
+            android:src="@drawable/ic_play"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/button_forward"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_toRightOf="@id/button_play"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_fast_forward_black_48dp"
+            />
+        <ImageView
+            android:id="@+id/button_rewind"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/button_play"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:src="@drawable/ic_fast_rewind_black_48dp"/>
+        <TextView
+            android:id="@+id/text_music_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            tools:text="05:00"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/text_music_current_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            tools:text="00:25"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

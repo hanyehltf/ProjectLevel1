@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".LoginActivity"
+    tools:deviceIds="wear">
+
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+         android:orientation="vertical"
+             >
+             <EditText
+                 android:layout_width="@dimen/edit_text_size"
+                 android:layout_height="@dimen/edit_text_height"
+                     android:background="@color/white"
+                 android:hint="UserName"
+android:textColor="@color/black"
+                 android:paddingLeft="@dimen/standard_margin"
+                 android:id="@+id/username"
+                 android:textSize="@dimen/standard_font"
+                     />
+
+
+             <EditText
+                 android:layout_width="@dimen/edit_text_size"
+                 android:layout_height="@dimen/edit_text_height"
+                 android:background="@color/white"
+                 android:hint="Password"
+android:id="@+id/password"
+                 android:inputType="textPassword"
+                 android:paddingLeft="@dimen/standard_margin"
+                 android:layout_marginTop="@dimen/standard_margin"
+                 android:textColor="@color/black"
+                 android:textSize="@dimen/standard_font"
+                 />
+<Button
+    android:layout_width="@dimen/edit_text_size"
+    android:layout_height="wrap_content"
+    android:textDirection="rtl"
+    android:textSize="@dimen/standard_font"
+    android:layout_marginTop="@dimen/standard_margin"
+    android:background="@color/design_default_color_primary_dark"
+    android:textColor="@color/white"
+    android:text="@string/submit"
+    android:id="@+id/login_btn"
+
+    />
+
+
+     </LinearLayout>
+
+
+</RelativeLayout>

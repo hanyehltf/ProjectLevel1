@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="sppiner_items">
+
+
+
+
+        <item>تهران </item>
+        <item>اصفهان </item>
+        <item>رشت </item>
+        <item>مشهد </item>
+        <item>شیراز </item>
+        <item>خرمشهر </item>
+        <item>کیش</item>
+        <item>کرج</item>
+    </string-array>
+</resources>

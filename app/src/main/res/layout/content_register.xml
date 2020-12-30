@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <ImageView
+
+        android:id="@+id/student_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+android:layout_alignRight="@id/load_avatar"
+        android:layout_marginTop="@dimen/standard_margin"
+
+        android:layout_alignLeft="@id/load_avatar"
+        android:src="@drawable/avatar"
+        />
+    <Button
+        android:id="@+id/load_avatar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/picture"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/student_pic"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:layout_below="@id/load_avatar"
+        style="@style/Theme.ProjectLevel1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/f_name"
+android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:textSize="@dimen/big_size_font"
+                android:textDirection="rtl"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginBottom="@dimen/standard_margin"
+android:background="@drawable/edittext"
+                android:textDirection="rtl"
+
+                android:paddingLeft="@dimen/standard_margin"
+                android:id="@+id/f_name_student"
+                android:textSize="@dimen/standard_font"
+                android:textColor="@color/black"
+
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l_name"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:textSize="@dimen/big_size_font"
+                android:textDirection="rtl"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:background="@drawable/edittext"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:textDirection="rtl"
+
+                android:paddingLeft="@dimen/standard_margin"
+                android:id="@+id/l_name_student"
+                android:textSize="@dimen/standard_font"
+                android:textColor="@color/black"
+
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:textSize="@dimen/big_size_font"
+                android:textDirection="rtl"
+                />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:text="زن"
+            />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="مرد"
+            />
+    </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:textSize="@dimen/big_size_font"
+                android:textDirection="rtl"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:background="@drawable/edittext"
+                android:id="@+id/sppiner_city"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:textDirection="rtl"
+
+                android:paddingLeft="@dimen/standard_margin"
+                android:textColor="@color/black"
+android:textSize="@dimen/standard_font"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:text="@string/phone_number"
+                android:textDirection="rtl"
+                android:textSize="@dimen/big_size_font" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:background="@drawable/edittext"
+                android:id="@+id/phone_number"
+                android:textSize="@dimen/standard_font"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/standard_margin"
+android:textDirection="rtl"
+                android:paddingLeft="@dimen/standard_margin"
+
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/interested"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:textSize="@dimen/big_size_font"
+                android:textDirection="rtl"
+                />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:background="@drawable/edittext"
+                android:maxHeight="@dimen/edit_text_height"
+                android:maxLines="5"
+                android:textDirection="rtl"
+                android:paddingLeft="@dimen/standard_margin"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/standard_font"
+
+
+                />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:text="@string/submit"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

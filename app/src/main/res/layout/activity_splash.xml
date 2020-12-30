@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".SplashActivity"
+    android:background="@color/teal_700"
+    tools:deviceIds="wear">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textDirection="rtl"
+        android:textAlignment="center"
+        android:textSize="@dimen/title_font_size"
+        android:textColor="@color/white"
+        android:text="خوش امدید "
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/standard_margin"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="پروژه ی برنامه نویسی "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_font"
+            android:layout_marginTop="@dimen/standard_margin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="درس : برنامه نویسی موبایل دو "
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:textSize="@dimen/standard_font"
+
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="موضوع :برنامه ی اتوماسیون دانشجویی"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:textSize="@dimen/standard_font"
+
+            android:textColor="@color/white"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

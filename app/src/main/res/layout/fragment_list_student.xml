@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/standard_margin"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="@dimen/standard_margin"
+    android:layout_marginBottom="4dp"
+
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:padding="@dimen/standard_margin">
+
+        <ImageView
+            android:id="@+id/students_item_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:adjustViewBounds="true"
+            tools:src="@android:color/background_light" />
+
+
+        <TextView
+            android:id="@+id/studens_item_f_name"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_margin"
+            tools:text="f_name" />
+
+        <TextView
+            android:id="@+id/studens_item_L_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_margin"
+            tools:text="l_name" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
